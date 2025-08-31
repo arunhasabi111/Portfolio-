@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arun Hasabi — Portfolio</title>
+  <meta name="description" content="Portfolio of Arun Hasabi — Growth & Marketing. Case studies, projects, and contact." />
+  <meta name="robots" content="index,follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Arun Hasabi — Portfolio" />
+  <meta property="og:description" content="Growth & Marketing portfolio: experiments, dashboards, and wins." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://arunhasabi.in/" />
+  <meta property="og:image" content="https://arunhasabi.in/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #121826;
+      --muted: #93a4b7;
+      --text: #e6edf7;
+      --brand: #6ee7ff;
+      --brand2: #a78bfa;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; color: var(--text); background: radial-gradient(1200px 800px at 80% -10%, rgba(167,139,250,.15), transparent), radial-gradient(900px 600px at -10% 10%, rgba(110,231,255,.12), transparent), var(--bg); }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    header { position: sticky; top: 0; backdrop-filter: blur(6px); background: rgba(11,15,25,.6); border-bottom: 1px solid rgba(255,255,255,.06); z-index: 10; }
+    nav { display:flex; align-items:center; justify-content: space-between; height: 64px; }
+    .logo { font-weight: 800; letter-spacing:.3px; }
+    .menu a { margin-left: 18px; font-weight: 600; color: var(--muted); }
+    .menu a.active, .menu a:hover { color: var(--text); }
+    .btn { display:inline-flex; align-items:center; gap:8px; padding:10px 14px; background: linear-gradient(135deg, var(--brand), var(--brand2)); color:#0b0f19; font-weight:700; border-radius: 12px; border: 0; cursor:pointer; box-shadow: 0 10px 25px rgba(110,231,255,.15); }
+
+    .hero { padding: 80px 0 32px; display:grid; grid-template-columns: 1.2fr .8fr; gap: 28px; align-items: center; }
+    .hero h1 { font-size: 48px; line-height: 1.05; margin: 0 0 14px; }
+    .hero p { color: var(--muted); font-size: 18px; }
+    .chip { display:inline-block; padding:6px 10px; border-radius:999px; background: rgba(110,231,255,.1); color: var(--brand); font-weight:700; font-size: 12px; letter-spacing:.4px; }
+    .card { background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01)); border: 1px solid rgba(255,255,255,.08); border-radius: 18px; padding: 18px; }
+    .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+    .section { padding: 42px 0; }
+    .section h2 { margin: 0 0 12px; font-size: 24px; }
+    .muted { color: var(--muted); }
+
+    .proj { display:flex; flex-direction:column; gap:10px; }
+    .proj h3 { margin: 0; font-size: 18px; }
+    .proj p { margin: 0; color: var(--muted); font-size: 14px; }
+    .proj .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag { padding:4px 8px; background:#0e1422; border:1px solid rgba(255,255,255,.06); color:#c6d2e1; border-radius:999px; font-size:12px; }
+
+    .experience { display:grid; grid-template-columns: 1fr; gap: 12px; }
+    .xp { display:flex; gap: 12px; align-items:flex-start; }
+    .xp time { font-variant-numeric: tabular-nums; color: var(--muted); width: 115px; flex:0 0 115px; }
+    .xp .what { flex:1; }
+    .xp .what h4 { margin: 0 0 4px; }
+
+    footer { padding: 28px 0 60px; border-top: 1px solid rgba(255,255,255,.06); margin-top: 48px; }
+
+    @media (max-width: 920px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+      .xp time { width: 90px; flex-basis: 90px; }
+      .hero h1 { font-size: 36px; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Arun Hasabi",
+    "url": "https://arunhasabi.in",
+    "sameAs": [
+      "https://www.linkedin.com/in/your-linkedin",
+      "https://x.com/your-twitter",
+      "https://github.com/your-github"
+    ],
+    "jobTitle": "Growth & Marketing",
+    "worksFor": {"@type":"Organization","name":"Your Company"}
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">ARUN<span style="opacity:.6">HASABI</span></div>
+        <div class="menu">
+          <a href="#work" class="active">Work</a>
+          <a href="#writing">Writing</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="chip">PORTFOLIO</span>
+        <h1>Hi, I’m <span style="background: linear-gradient(90deg,var(--brand),var(--brand2)); -webkit-background-clip: text; background-clip:text; color: transparent;">Arun Hasabi</span>.<br/> I build & scale growth engines.</h1>
+        <p>Performance marketer focused on Meta + Google ads, CRO, and analytics. I turn experiments into compounding revenue.</p>
+        <div style="display:flex; gap: 12px; margin-top: 18px;">
+          <a class="btn" href="#contact">Contact me</a>
+          <a class="btn" style="background:#111827; color: var(--text); border:1px solid rgba(255,255,255,.08)" href="/ArunHasabi_CV.pdf">Download CV</a>
+        </div>
+      </div>
+      <div class="card">
+        <div style="padding: 16px; border-radius: 12px; background: conic-gradient(from 210deg at 50% 50%, rgba(110,231,255,.15), rgba(167,139,250,.15), transparent 60%); min-height: 220px; display:flex; align-items:center; justify-content:center;">
+          <div style="text-align:center">
+            <div style="font-size:42px; font-weight:800;">₹10Cr+</div>
+            <div class="muted">Ad Spend Managed</div>
+            <div style="margin-top:8px; font-size:28px; font-weight:800;">12.4x</div>
+            <div class="muted">Peak ROAS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <h2>Selected Work</h2>
+      <p class="muted">A few projects I’m proud of. Swap with your real case studies.</p>
+      <div class="grid">
+        <article class="card proj">
+          <h3>Scaling Festive Sales for D2C Apparel</h3>
+          <p>Structured experiments across ASC, IB & catalog; state-wise splits; creative refresh cadence → <strong>+68% NMV</strong> in 4 weeks.</p>
+          <div class="tags">
+            <span class="tag">Meta Ads</span><span class="tag">Google PMax</span><span class="tag">CRO</span>
+          </div>
+          <a href="#" aria-label="Read case study">Read case study →</a>
+        </article>
+        <article class="card proj">
+          <h3>Plants Brand Profitability Turnaround</h3>
+          <p>Reduced Spend/GMV from 28%→12% with SKU pruning, RTO segmentation, and PQ score fixes.</p>
+          <div class="tags">
+            <span class="tag">Attribution</span><span class="tag">Analytics</span><span class="tag">Lifecycle</span>
+          </div>
+          <a href="#">Read case study →</a>
+        </article>
+        <article class="card proj">
+          <h3>Jewellery Creative Engine</h3>
+          <p>Created UGC + AI video playbook; refreshed hooks weekly; lifted CTR by 43% and CPAs down 26%.</p>
+          <div class="tags">
+            <span class="tag">UGC</span><span class="tag">Video</span><span class="tag">Testing</span>
+          </div>
+          <a href="#">Read case study →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="writing" class="section">
+      <h2>Writing</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>ASC vs IB: When to Use Which</h3>
+          <p class="muted">A practical guide from 50+ experiments.</p>
+        </div>
+        <div class="card">
+          <h3>PMax for Fashion SKUs</h3>
+          <p class="muted">Feed hygiene & signal strategy for scale.</p>
+        </div>
+        <div class="card">
+          <h3>Measuring Creative Fatigue</h3>
+          <p class="muted">Hold rate, hook rate, and replacement rules.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="card">
+        <p>I’m a growth marketer based in India. I love building clean reporting, clear hypotheses, and compounding funnels. Tools: Metabase, GA4, Sheets, Apps Script, BigQuery, Meta & Google Ads.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:hello@arunhasabi.in">hello@arunhasabi.in</a> · LinkedIn: <a href="#">/in/arunhasabi</a></p>
+        <p class="muted">Tip: Use <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a> or similar for a code-free contact form.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+      <div class="muted">© <span id="y"></span> Arun Hasabi. All rights reserved.</div>
+      <div class="muted">Built with simple HTML + CSS. Deployed on GitHub Pages.</div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
